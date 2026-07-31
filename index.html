@@ -209,9 +209,19 @@ footer{background:var(--green-deep);color:var(--cream);padding:70px 0 30px;}
 .footer-col a:hover{color:var(--gold);}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding-top:26px;font-size:.78rem;color:#8B937D;}
 
+/* ---- responsive: large tablets / small laptops ---- */
+@media(max-width:1080px){
+  .wrap{padding:0 5vw;}
+  .nav-links{gap:22px;}
+  .trek-grid{gap:36px;}
+}
+
+/* ---- responsive: tablets & below (nav collapses) ---- */
 @media(max-width:920px){
   .nav-links{display:none;}
+  .nav-social{display:none;}
   .hamburger{display:flex;}
+  .nav-cta{padding:10px 16px;font-size:.68rem;}
   .split{flex-direction:column !important;}
   .hero-overlay{background:linear-gradient(180deg, var(--cream) 0%, rgba(237,232,221,.9) 38%, rgba(237,232,221,.15) 62%, rgba(237,232,221,0) 78%);}
   .hero-inner{max-width:100%;padding:120px 7vw 60px;}
@@ -224,12 +234,86 @@ footer{background:var(--green-deep);color:var(--cream);padding:70px 0 30px;}
   .movement-icons{grid-template-columns:1fr 1fr;}
   .quote-overlay{position:static;max-width:100%;text-align:left;padding:20px;background:rgba(15,36,25,.55);}
   .quote-overlay .rule{margin-left:0;}
+  .panel-photo{min-height:340px;}
+  .panel-cream{padding:11vw 6vw;}
+  .footer-top{gap:36px;}
 }
+
+/* ---- responsive: large phones ---- */
+@media(max-width:768px){
+  .wrap{padding:0 6vw;}
+  .hero-inner h1{font-size:clamp(2.1rem,9vw,3.2rem);}
+  .hero-inner .lead{max-width:100%;font-size:1rem;}
+  .btn{padding:14px 26px;font-size:.76rem;}
+  .intro{padding:16vw 0;}
+  .intro h2{font-size:clamp(1.7rem,7vw,2.4rem);}
+  .trek{padding:16vw 0;}
+  .trek-top h2{font-size:clamp(1.8rem,7.5vw,2.6rem);}
+  .batches{gap:10px;}
+  .batch-pill{padding:9px 16px;font-size:.76rem;}
+  .price-card{padding:18px 16px;}
+  .footer-top{flex-direction:column;gap:32px;}
+  .footer-bottom{flex-direction:column;gap:8px;}
+}
+
+/* ---- responsive: standard mobile ---- */
 @media(max-width:560px){
   .wrap{padding:0 22px;}
+  html{font-size:15px;}
+  .nav-inner{padding:10px 22px;}
+  .logo img{height:38px;width:38px;}
+  .logo-word{font-size:1.05rem;}
+  .logo-word small{font-size:.5rem;letter-spacing:.22em;}
+  .hero-inner{padding:104px 6vw 50px;}
+  .hero-inner h1{font-size:clamp(2rem,10vw,2.8rem);}
+  .hero-inner .eyebrow{font-size:.64rem;letter-spacing:.2em;}
+  .btn{width:100%;justify-content:center;padding:15px 20px;}
+  .panel-cream{padding:14vw 6vw;}
+  .panel-cream h2{font-size:clamp(1.6rem,8vw,2.2rem);}
+  .panel-photo{min-height:260px;}
+  .item-row{gap:14px;padding:14px 0;}
+  .item-row .circle-icon{width:42px;height:42px;}
+  .item-row h4{font-size:.96rem;}
+  .item-row p{font-size:.86rem;}
+  .movement-icons{grid-template-columns:1fr 1fr;gap:16px 12px;}
+  .cta-pill{width:100%;justify-content:center;text-align:center;font-size:.78rem;padding:14px 18px;}
+  .trek-poster-frame{margin-bottom:10px;}
+  .trek-stats div{padding:12px 16px;}
+  .trek-stats strong{font-size:1.35rem;}
+  .price-note{flex-direction:column;padding:16px;}
+  .pricing-image-frame{padding:10px;}
+  .price-card .price{font-size:1.6rem;}
+  .trek-cta .btn{width:auto;}
+  .footer-brand{max-width:100%;}
   .wa-float{right:16px;bottom:16px;}
   .wa-btn{width:52px;height:52px;}
   .wa-popover{width:min(78vw,260px);}
+  .mobile-menu a{font-size:1.7rem;}
+}
+
+/* ---- responsive: small phones ---- */
+@media(max-width:400px){
+  .wrap{padding:0 18px;}
+  .hero-inner h1{font-size:clamp(1.8rem,10.5vw,2.4rem);}
+  .hero-inner .lead{font-size:.94rem;line-height:1.6;}
+  .hero-site{font-size:.76rem;}
+  .movement-icons{grid-template-columns:1fr;}
+  .batches{flex-direction:column;}
+  .batch-pill{text-align:center;}
+  .trek-stats strong{font-size:1.15rem;}
+  .price-card .price{font-size:1.4rem;}
+  .quote-overlay p{font-size:1.05rem;}
+}
+
+/* ---- responsive: very short viewports (landscape phones) ---- */
+@media(max-height:480px) and (orientation:landscape){
+  .hero{min-height:auto;}
+  .hero-inner{min-height:auto;padding:100px 7vw 40px;}
+}
+
+/* ---- responsive: large desktops ---- */
+@media(min-width:1600px){
+  :root{--maxw:1400px;}
 }
 </style>
 </head>
